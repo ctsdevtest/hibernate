@@ -9,7 +9,7 @@
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-        <property name="connection.url">jdbc:oracle:thin:@toshiba:1521:XE</property>
+        <property name="connection.url">jdbc:oracle:thin:@RAHUL-TOSHIBA:1521:XE</property>
         <property name="connection.username">system</property>
         <property name="connection.password">password</property>
         <property name="hibernate.default_schema">HR</property>
@@ -18,13 +18,13 @@
         <property name="connection.pool_size">1</property>
 
         <!-- SQL dialect -->
-        <property name="dialect"> org.hibernate.dialect.OracleDialect </property>
+        <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
 
         <!-- Enable Hibernate's automatic session context management -->
         <property name="current_session_context_class">thread</property>
 
 		<!-- Drop and re create the schema the database on start up -->
-		<property name="hbm2ddl.auto">update</property>
+		<property name="hbm2ddl.auto">create</property>
 		
 <!--         <property name="cache.use_query_cache">true</property>
         <property name="cache.use_second_level_cache">true</property>

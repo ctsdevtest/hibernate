@@ -54,3 +54,24 @@ CREATE TABLE managerTest
     
      select FirstName,SUM(salary) from employee group by FirstName having salary = MAX(salary)
      select * from employee
+     
+     select * from HR.Project
+     select * from HR.tasks
+     select * from HR.Module
+     drop table HR.Project;
+     drop table HR.tasks;
+     drop table HR.Module;
+     commit;
+     
+     select * from HR.Employee
+     select * from HR.PermanentEmployee
+      select * from HR.TEMPORARYEmployee
+      drop table HR.Employee;
+      drop table HR.PermanentEmployee; 
+      drop table HR.TEMPORARYEmployee;
+      
+      select * from HR.Person
+      select * from HR.PersonDetails
+      
+      select * from HR.Student
+      select * from HR.College
